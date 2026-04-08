@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinMate - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="app-shell">
+      <header class="hero">
+        <div class="hero-copy"><div class="hero-copy-top"><label class="language-switch language-switch-inline"><span id="language-label">Language</span><select id="language-select"><option value="en">English</option><option value="hi">Hindi</option></select></label><img class="hero-logo" src="./assets/finmate-logo.png" alt="FinMate logo" /></div><div class="hero-body"><div class="hero-main"><p id="hero-eyebrow" class="eyebrow">Financial Copilot</p><h1 id="hero-title">Profile first. Then guided money decisions.</h1><p id="hero-text" class="hero-text">Create a profile, move to the dashboard, then work inside Adviser, Planner, and Scheme Finder.</p></div></div></div>
+      </header>
+      <nav class="top-nav panel"><a id="nav-profile" class="nav-chip" data-page="profile" href="./profile.html">Profile</a><a id="nav-dashboard" class="nav-chip active" data-page="dashboard" href="./dashboard.html">Dashboard</a><a id="nav-adviser" class="nav-chip" data-page="adviser" href="./adviser.html">Adviser</a><a id="nav-planner" class="nav-chip" data-page="planner" href="./planner.html">Planner</a><a id="nav-schemes" class="nav-chip" data-page="scheme" href="./scheme.html">Scheme Finder</a></nav>
+      <main class="screen-stack"><section class="panel"><div class="section-heading"><div><p id="dashboard-step-kicker" class="section-kicker">Step 2</p><h2 id="dashboard-title">Dashboard</h2></div><span id="health-badge" class="pill success">Stable</span></div><div class="welcome-strip"><div><span id="dashboard-user-label">User</span><strong id="dashboard-name">-</strong></div><div><span id="dashboard-goal-label">Primary goal</span><strong id="dashboard-goal">-</strong></div><div><span id="dashboard-location-label">Location</span><strong id="dashboard-location">-</strong></div></div><div class="metrics-grid"><article class="metric-card"><span id="monthly-surplus-label">Monthly surplus</span><strong id="monthly-surplus">₹0</strong><p id="surplus-caption">Healthy room for investing and safety buffer.</p></article><article class="metric-card"><span id="emergency-runway-label">Emergency runway</span><strong id="emergency-runway">0 months</strong><p id="runway-caption">Aim for at least 6 months for better stability.</p></article><article class="metric-card"><span id="recommended-sip-label">Recommended SIP</span><strong id="recommended-sip">₹0</strong><p id="sip-caption">Aligned to your profile.</p></article><article class="metric-card"><span id="health-score-label">Health score</span><strong id="health-score">0/100</strong><p id="health-caption">Primary focus: -</p></article></div><div class="section-heading minor-heading"><div><p id="dashboard-module-kicker" class="section-kicker">Step 3</p><h2 id="dashboard-modules-title">Choose one module</h2></div></div><div class="option-grid"><a class="option-card" href="./adviser.html"><span id="card-adviser-span">Adviser</span><strong id="card-adviser-title">Chat with a financial assistant</strong><p id="card-adviser-copy">Ask focused questions about savings, investing, and wealth building.</p></a><a class="option-card" href="./planner.html"><span id="card-planner-span">Planner</span><strong id="card-planner-title">Create a goal-based plan</strong><p id="card-planner-copy">Estimate monthly contributions and practical actions for each goal.</p></a><a class="option-card" href="./scheme.html"><span id="card-scheme-span">Scheme Finder</span><strong id="card-scheme-title">Find relevant government schemes</strong><p id="card-scheme-copy">Match schemes using your profile, goal, and preference filters.</p></a></div></section></main>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>

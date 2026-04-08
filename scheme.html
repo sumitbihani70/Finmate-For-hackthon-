@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinMate - Scheme Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="scheme">
+    <div class="app-shell">
+      <header class="hero"><div class="hero-copy"><div class="hero-copy-top"><label class="language-switch language-switch-inline"><span id="language-label">Language</span><select id="language-select"><option value="en">English</option><option value="hi">Hindi</option></select></label><img class="hero-logo" src="./assets/finmate-logo.png" alt="FinMate logo" /></div><div class="hero-body"><div class="hero-main"><p id="hero-eyebrow" class="eyebrow">Financial Copilot</p><h1 id="hero-title">Profile first. Then guided money decisions.</h1><p id="hero-text" class="hero-text">Create a profile, move to the dashboard, then work inside Adviser, Planner, and Scheme Finder.</p></div></div></div></header>
+      <nav class="top-nav panel"><a id="nav-profile" class="nav-chip" data-page="profile" href="./profile.html">Profile</a><a id="nav-dashboard" class="nav-chip" data-page="dashboard" href="./dashboard.html">Dashboard</a><a id="nav-adviser" class="nav-chip" data-page="adviser" href="./adviser.html">Adviser</a><a id="nav-planner" class="nav-chip" data-page="planner" href="./planner.html">Planner</a><a id="nav-schemes" class="nav-chip active" data-page="scheme" href="./scheme.html">Scheme Finder</a></nav>
+      <main class="screen-stack"><section class="panel"><div class="module-header"><a id="back-dashboard" class="back-link" href="./dashboard.html">Back to Dashboard</a><div class="section-heading"><div><p id="scheme-kicker" class="section-kicker">Module 3</p><h2 id="scheme-title">Scheme Finder</h2></div><span id="scheme-pill" class="pill">Eligibility</span></div></div><p id="scheme-copy" class="section-copy">Use your profile and extra filters to find the most relevant government support.</p><form class="scheme-filter-grid"><label><span id="scheme-goal-label">Goal focus</span><select id="scheme-goal"><option value="Emergency Fund">Emergency Fund</option><option value="Retirement">Retirement</option><option value="Family Support">Family Support</option><option value="Small Business">Small Business</option><option value="Tax Saving">Tax Saving</option></select></label><label><span id="scheme-occupation-label">Occupation type</span><select id="scheme-occupation"><option value="Salaried">Salaried</option><option value="Self-Employed">Self-Employed</option><option value="Student">Student</option><option value="Street Vendor">Street Vendor</option></select></label><label><span id="scheme-gender-label">Gender</span><select id="scheme-gender"><option value="Any">Any</option><option value="Male">Male</option><option value="Female">Female</option></select></label><label><span id="scheme-tax-label">Tax preference</span><select id="scheme-tax"><option value="Any">Any</option><option value="Tax Free">Tax Free</option><option value="No Tax Preference">No Tax Preference</option></select></label><button class="secondary-button" id="scheme-button" type="button">Find Schemes</button></form><div id="scheme-results" class="scheme-list"></div></section></main>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./scheme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinMate - Adviser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="adviser">
+    <div class="app-shell">
+      <header class="hero"><div class="hero-copy"><div class="hero-copy-top"><label class="language-switch language-switch-inline"><span id="language-label">Language</span><select id="language-select"><option value="en">English</option><option value="hi">Hindi</option></select></label><img class="hero-logo" src="./assets/finmate-logo.png" alt="FinMate logo" /></div><div class="hero-body"><div class="hero-main"><p id="hero-eyebrow" class="eyebrow">Financial Copilot</p><h1 id="hero-title">Profile first. Then guided money decisions.</h1><p id="hero-text" class="hero-text">Create a profile, move to the dashboard, then work inside Adviser, Planner, and Scheme Finder.</p></div></div></div></header>
+      <nav class="top-nav panel"><a id="nav-profile" class="nav-chip" data-page="profile" href="./profile.html">Profile</a><a id="nav-dashboard" class="nav-chip" data-page="dashboard" href="./dashboard.html">Dashboard</a><a id="nav-adviser" class="nav-chip active" data-page="adviser" href="./adviser.html">Adviser</a><a id="nav-planner" class="nav-chip" data-page="planner" href="./planner.html">Planner</a><a id="nav-schemes" class="nav-chip" data-page="scheme" href="./scheme.html">Scheme Finder</a></nav>
+      <main class="screen-stack"><section class="panel"><div class="module-header"><a id="back-dashboard" class="back-link" href="./dashboard.html">Back to Dashboard</a><div class="section-heading"><div><p id="adviser-kicker" class="section-kicker">Module 1</p><h2 id="adviser-title">Adviser</h2></div><span id="adviser-pill" class="pill">Guided Q&A</span></div></div><div class="adviser-modes"><button id="mode-investing" class="mode-chip active" type="button" data-mode="investing">Investing</button><button id="mode-saving" class="mode-chip" type="button" data-mode="saving">Saving</button><button id="mode-growing" class="mode-chip" type="button" data-mode="growing">Growing Wealth</button></div><div id="question-list" class="question-list"></div><div id="chat-thread" class="chat-thread"></div><div class="chat-actions"><input type="text" id="chat-input" placeholder="Ask a question from the selected mode" /><button class="primary-button" id="ask-button" type="button">Ask</button></div></section></main>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./adviser.js"></script>
+  </body>
+</html>

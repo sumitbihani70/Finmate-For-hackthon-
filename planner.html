@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinMate - Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="planner">
+    <div class="app-shell">
+      <header class="hero"><div class="hero-copy"><div class="hero-copy-top"><label class="language-switch language-switch-inline"><span id="language-label">Language</span><select id="language-select"><option value="en">English</option><option value="hi">Hindi</option></select></label><img class="hero-logo" src="./assets/finmate-logo.png" alt="FinMate logo" /></div><div class="hero-body"><div class="hero-main"><p id="hero-eyebrow" class="eyebrow">Financial Copilot</p><h1 id="hero-title">Profile first. Then guided money decisions.</h1><p id="hero-text" class="hero-text">Create a profile, move to the dashboard, then work inside Adviser, Planner, and Scheme Finder.</p></div></div></div></header>
+      <nav class="top-nav panel"><a id="nav-profile" class="nav-chip" data-page="profile" href="./profile.html">Profile</a><a id="nav-dashboard" class="nav-chip" data-page="dashboard" href="./dashboard.html">Dashboard</a><a id="nav-adviser" class="nav-chip" data-page="adviser" href="./adviser.html">Adviser</a><a id="nav-planner" class="nav-chip active" data-page="planner" href="./planner.html">Planner</a><a id="nav-schemes" class="nav-chip" data-page="scheme" href="./scheme.html">Scheme Finder</a></nav>
+      <main class="screen-stack"><section class="panel"><div class="module-header"><a id="back-dashboard" class="back-link" href="./dashboard.html">Back to Dashboard</a><div class="section-heading"><div><p id="planner-kicker" class="section-kicker">Module 2</p><h2 id="planner-title">Planner</h2></div><span id="planner-pill" class="pill">Goal Plan</span></div></div><p id="planner-copy" class="section-copy">Plan for investments, trips, education, emergency fund, gadgets, or other large expenses.</p><div class="planner-grid"><label><span id="planner-type-label">Planning type</span><select id="plan-type"><option value="Investments">Investments</option><option value="Trip">Trip</option><option value="Emergency Fund">Emergency Fund</option><option value="Education">Education</option><option value="Gadget Purchase">Gadget Purchase</option><option value="Big Expense">Big Expense</option></select></label><label><span id="planner-target-label">Target amount (INR)</span><input type="number" id="target-amount" min="10000" value="1000000" /></label><label><span id="planner-timeline-label">Timeline (years)</span><input type="number" id="timeline-years" min="1" max="40" value="5" /></label><button class="secondary-button" id="plan-button" type="button">Calculate plan</button></div><div class="planner-results"><article><span id="planner-result-investment-label">Required monthly investment</span><strong id="required-investment">₹0</strong></article><article><span id="planner-result-mix-label">Suggested mix</span><strong id="suggested-mix">-</strong></article><article><span id="planner-result-insight-label">Planner insight</span><strong id="readiness-message">-</strong></article><article><span id="planner-result-action-label">Suggested action</span><strong id="planner-action">-</strong></article><article><span id="planner-result-priority-label">Priority level</span><strong id="planner-priority">-</strong></article><article><span id="planner-result-suggestion-label">Extra suggestion</span><strong id="planner-suggestion">-</strong></article></div></section></main>
+    </div>
+    <script src="./common.js"></script>
+    <script src="./planner.js"></script>
+  </body>
+</html>
